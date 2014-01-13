@@ -1,0 +1,64 @@
+html, body {
+	background: black;
+    margin: 20px;
+}
+
+.row {
+	background: black;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background: black;
+}
+
+.active {
+	font-weight: bold;
+}
+
+#res {
+	background: black;
+	position: absolute;
+	margin-top:2em;
+	margin-left: -2em;
+	padding: 1em;
+	color:#999999;
+}
+
+#res table {
+	font-size: 2em;
+	border: 2px solid green;
+	text-align: center;
+    background: red;
+    -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#res table tr {
+	
+}
+
+
+#res table td {
+	background: black;
+	width: 2em;
+	height: 2em;
+	text-align:center;
+	padding:5px;
+	white-space: nowrap;
+}
+
+.form-group {
+	color: #999999;
+}
+
+#dp_swf_engine {
+ display:none;
+}
+
+.about {
+	margin-top:2em;
+	padding: 1em;
+	color:#999999;
+}
