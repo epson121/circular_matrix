@@ -82,7 +82,7 @@
     	for ($i = 0; $i < $rows; $i++) {
     		$result .= '<tr>';
     		for ($j = 0; $j < $cols; $j++) {
-    			$result .= '<td>' . $res[$i][$j] . "</td>";
+    			$result .= '<td class="pulse-shrink">' . $res[$i][$j] . "</td>";
     		}
     		$result .= '</tr>';
     	}

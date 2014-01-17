@@ -27,18 +27,12 @@ html, body {
 
 #res table {
 	font-size: 2em;
-	border: 2px solid green;
 	text-align: center;
-    background: red;
+    background: green;
     -webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
-
-#res table tr {
-	
-}
-
 
 #res table td {
 	background: black;
@@ -47,6 +41,7 @@ html, body {
 	text-align:center;
 	padding:5px;
 	white-space: nowrap;
+	border:1px green solid;
 }
 
 .form-group {
@@ -61,4 +56,9 @@ html, body {
 	margin-top:2em;
 	padding: 1em;
 	color:#999999;
+}
+
+.about {
+	font-size: 1.2em;
+	padding:3px;
 }
