@@ -8,16 +8,12 @@
 		private $xDirection;
 		// initial y direction(to left)
 		private $yDirection;
-		private $direction;
 
 		function __construct($rows, $cols) {
 			$this->rows = $rows;
 			$this->cols = $cols;
 			$this->xDirection = 0;
 			$this->yDirection = -1;
-			// 0 - horizontal change
-			// 1 - vertical change
-			$this->direction = 0;
 		}
 
 		private function goLeft() {
@@ -50,12 +46,6 @@
 		public function changeDirection($index) {
 			$keys = array_keys($this->directions);
 			call_user_func(array($this, $this->directions[$keys[$index]]));
-			// ternary??
-			if ($this->direction == 1) {
-				$this->direction = 0;
-			} else {
-				$this->direction = 1;
-			}
 		}
 
 		public function generateArray() { 
@@ -71,7 +61,7 @@
 
 		   		$next_px = $px + $this->xDirection;
 		   		$next_py = $py + $this->yDirection;
-		   		//echo "(",$px . ".  " . $py . ")</br>";
+
 		   		if ($next_px < 0 || $next_px >= $this->rows || $next_py < 0 || $next_py >= $this->cols || $this->res[$next_px][$next_py] != null) {
 		   			$this->changeDirection($directionCounter % 4);
 		   			$directionCounter += 1;
@@ -79,7 +69,6 @@
 
 		   		$px += $this->xDirection;
 		   		$py += $this->yDirection;
-		   		
 
 		   		$counter++;
 
@@ -99,14 +88,6 @@
 			$result .= '</tbody></table>';
 
 			return $result;
-		}
-
-		public function getXDirection() {
-			return $this->xDirection;
-		}
-
-		public function getYDirection() {
-			return $this->yDirection;
 		}
 	}
 
