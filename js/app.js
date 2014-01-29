@@ -30,7 +30,7 @@ App.IndexController = Ember.ObjectController.extend({
     submitAction : function(){
        $.ajax({
             type : 'POST',
-            url : 'table.php',           
+            url : 'controller.php',           
             data: {
                 ok : true,
                 rows : this.get("model.rows"),
